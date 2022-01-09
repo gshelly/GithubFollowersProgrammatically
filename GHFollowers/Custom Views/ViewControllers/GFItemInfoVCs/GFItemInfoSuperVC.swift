@@ -14,6 +14,7 @@ class GFItemInfoSuperVC: UIViewController {
     let itemInfoViewTwo = GFItemInfoView()
     let actionButton = GFButton()
     var user: User!
+    weak var delegate: UserInfoVCDelegate?
     
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
@@ -28,6 +29,7 @@ class GFItemInfoSuperVC: UIViewController {
         super.viewDidLoad()
         configureViewController()
         layoutUI()
+//        configureActionButton()
         configureStackView()
     }
     
@@ -36,10 +38,17 @@ class GFItemInfoSuperVC: UIViewController {
         view.backgroundColor = .secondarySystemBackground
     }
     
+    private func configureActionButton() {
+        actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
+    }
+    
+    @objc func actionButtonTapped() {}
+    
     func layoutUI() {
         let padding: CGFloat = 20
         view.addSubview(stackView)
         view.addSubview(actionButton)
+        configureActionButton()
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
