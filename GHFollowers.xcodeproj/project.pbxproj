@@ -21,6 +21,7 @@
 		AB913AC2278955DF006545D1 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB913AC1278955DF006545D1 /* String+Ext.swift */; };
 		AB913AC4278A9D4B006545D1 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB913AC3278A9D4B006545D1 /* PersistenceManager.swift */; };
 		AB913AC6278AB163006545D1 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB913AC5278AB163006545D1 /* FavoriteCell.swift */; };
+		AB913AC9278AC336006545D1 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB913AC8278AC336006545D1 /* GFTabBarController.swift */; };
 		ABB4D688278398ED0068CC20 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4D687278398ED0068CC20 /* GFButton.swift */; };
 		ABB4D68A2783A0020068CC20 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4D6892783A0020068CC20 /* GFTextField.swift */; };
 		ABB4D68C2783B9C80068CC20 /* FollowersListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB4D68B2783B9C80068CC20 /* FollowersListVC.swift */; };
@@ -58,6 +59,7 @@
 		AB913AC1278955DF006545D1 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		AB913AC3278A9D4B006545D1 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		AB913AC5278AB163006545D1 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		AB913AC8278AC336006545D1 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		ABB4D687278398ED0068CC20 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		ABB4D6892783A0020068CC20 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		ABB4D68B2783B9C80068CC20 /* FollowersListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowersListVC.swift; sourceTree = "<group>"; };
@@ -157,6 +159,14 @@
 			path = GFItemInfoVCs;
 			sourceTree = "<group>";
 		};
+		AB913AC7278AC302006545D1 /* TabbarViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				AB913AC8278AC336006545D1 /* GFTabBarController.swift */,
+			);
+			path = TabbarViewContoller;
+			sourceTree = "<group>";
+		};
 		ABB4D6952784C9900068CC20 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +181,7 @@
 		ABB4D6962784C9F30068CC20 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB913AC7278AC302006545D1 /* TabbarViewContoller */,
 				AB913AA02787DBD2006545D1 /* TextFields */,
 				AB913A9F2787DBC4006545D1 /* Buttons */,
 				AB913A9E2787DBB2006545D1 /* ImageViews */,
@@ -372,6 +383,7 @@
 				AB913AAC27892D09006545D1 /* GFItemInfoView.swift in Sources */,
 				ABFB0FEF277D3C4B004D648E /* SceneDelegate.swift in Sources */,
 				AB913AAA27892099006545D1 /* Constants.swift in Sources */,
+				AB913AC9278AC336006545D1 /* GFTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
